@@ -1,0 +1,10 @@
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\bin\Release\FontTool.exe.config
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\bin\Release\FontTool.exe
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\bin\Release\FontTool.pdb
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\obj\Release\FontTool.FontEdit.resources
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\obj\Release\FontTool.FontToolForm.resources
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\obj\Release\FontTool.Padding.resources
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\obj\Release\FontTool.Properties.Resources.resources
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\obj\Release\FontTool.csproj.GenerateResource.Cache
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\obj\Release\FontTool.exe
+D:\Desktop\Programs\DirectxEngine\FontTool\FontTool\obj\Release\FontTool.pdb
