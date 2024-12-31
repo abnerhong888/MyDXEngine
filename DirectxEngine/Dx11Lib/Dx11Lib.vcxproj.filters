@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Graphic">
+      <UniqueIdentifier>{57dd11cf-5fc3-4236-8ff8-f6aa01146451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphic\Tools">
+      <UniqueIdentifier>{52f2ba25-8a49-426d-ab83-567860c33a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphic\Tools\Typedefs">
+      <UniqueIdentifier>{807ef14d-e771-4bff-a776-8799aab22a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphic\Font">
+      <UniqueIdentifier>{e2384bc5-8f36-46ba-911b-066c2dfb4672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphic\GUI">
+      <UniqueIdentifier>{00a0a6c7-8625-4846-9b82-c8b20bd9f6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphic\3D">
+      <UniqueIdentifier>{d2ae24a5-c8d5-4c4a-b05f-4e9f462472af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{0c4d63f7-e969-40a9-bda5-b7bce3829fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic">
+      <UniqueIdentifier>{6a6e47ff-134c-4d8e-a7e1-6a0a841ceceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic\Tools">
+      <UniqueIdentifier>{1abd4462-91aa-47d1-a596-0c31ae9d5d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic\Font">
+      <UniqueIdentifier>{fe8996da-db10-403a-9395-afcbc6f4ac9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic\GUI">
+      <UniqueIdentifier>{1bd06370-3feb-4814-ba1e-5bd9c280a89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic\3D">
+      <UniqueIdentifier>{1751303b-01a1-4914-a186-fc783781391d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{35f201ff-95cb-4e75-9d4b-650d01d2c8d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Dx11Project\Graphic\GraphicCommon.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GraphicTools.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\AdapterTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\BlendTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\BufferTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\ConstantBufTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DepthStencilTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DrawTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DXDeviceTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DXWIndowTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\MeshTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\RasterizerTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\RenderTargetViewTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\RenderTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\SamplerTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\ShaderTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\TextureTool.h">
+      <Filter>Header Files\Graphic\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\ConstantBufferType.h">
+      <Filter>Header Files\Graphic\Tools\Typedefs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\LayoutStruct.h">
+      <Filter>Header Files\Graphic\Tools\Typedefs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\MyColor.h">
+      <Filter>Header Files\Graphic\Tools\Typedefs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\VertexType.h">
+      <Filter>Header Files\Graphic\Tools\Typedefs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\Font\MyFont.h">
+      <Filter>Header Files\Graphic\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\MYGUI.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\SettingGUI.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIStatic.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIButton.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIScrollBar.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIListBox.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIComBox.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUICheckBox.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIRadio.h">
+      <Filter>Header Files\Graphic\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\3D\Camera.h">
+      <Filter>Header Files\Graphic\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\3D\MySTL.h">
+      <Filter>Header Files\Graphic\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\3D\Pick.h">
+      <Filter>Header Files\Graphic\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\3D\STLReader.h">
+      <Filter>Header Files\Graphic\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\ErrorLogger.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\FileSystem.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\KeyboardClass.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\KeyboardEvent.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\MouseClass.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\MouseEvent.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\MouseKeyboard.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\MyTimer.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\MyTypes.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\SmartPointer.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\StringConverter.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Utility\utility.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dx11Project\Graphic\GraphicExample.h">
+      <Filter>Header Files\Graphic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\AdapterTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\BlendTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\BufferTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\ConstantBufTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DepthStencilTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DrawTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DXDeviceTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DXWIndowTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\MeshTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\RasterizerTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\RenderTargetViewTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\RenderTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\SamplerTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\ShaderTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\TextureTool.cpp">
+      <Filter>Source Files\Graphic\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\Font\MyFont.cpp">
+      <Filter>Source Files\Graphic\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\MYGUI.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\SettingGUI.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIStatic.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIButton.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIScrollBar.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIListBox.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIComBox.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUICheckBox.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIRadio.cpp">
+      <Filter>Source Files\Graphic\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\3D\Camera.cpp">
+      <Filter>Source Files\Graphic\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\3D\MySTL.cpp">
+      <Filter>Source Files\Graphic\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\3D\STLReader.cpp">
+      <Filter>Source Files\Graphic\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\ErrorLogger.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\FileSystem.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\KeyboardClass.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\KeyboardEvent.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\MouseClass.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\MouseEvent.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\MouseKeyboard.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\MyTimer.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Utility\StringConverter.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dx11Project\Graphic\GraphicExample.cpp">
+      <Filter>Source Files\Graphic</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

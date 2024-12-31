@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F12B6BA-5A38-4B2B-8734-ED932AF053AD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Dx11Lib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)\bin\$(Platform)\</OutDir>
+    <TargetName>Dx11Libx64D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)\bin\$(Platform)\</OutDir>
+    <TargetName>Dx11Libx64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dx11Project\Graphic;$(SolutionDir)Dx11Project;$(SolutionDir)\common\DirectXTK\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\common\DirectXTK\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTKd.lib</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)Mybat.bat</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dx11Project\Graphic;$(SolutionDir)Dx11Project;$(SolutionDir)\common\DirectXTK\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)Mybat.bat</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>DirectXTK.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\common\DirectXTK\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Dx11Project\Graphic\3D\Camera.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\3D\MySTL.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\3D\Pick.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\3D\STLReader.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Font\MyFont.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GraphicCommon.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GraphicExample.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GraphicTools.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIButton.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUICheckBox.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIComBox.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIListBox.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIRadio.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIScrollBar.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\GUIStatic.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\MYGUI.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\GUI\SettingGUI.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\AdapterTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\BlendTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\BufferTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\ConstantBufTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DepthStencilTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DrawTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DXDeviceTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\DXWIndowTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\MeshTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\RasterizerTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\RenderTargetViewTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\RenderTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\SamplerTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\ShaderTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\TextureTool.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\ConstantBufferType.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\LayoutStruct.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\MyColor.h" />
+    <ClInclude Include="..\Dx11Project\Graphic\Tools\Typedefs\VertexType.h" />
+    <ClInclude Include="..\Dx11Project\Utility\ErrorLogger.h" />
+    <ClInclude Include="..\Dx11Project\Utility\FileSystem.h" />
+    <ClInclude Include="..\Dx11Project\Utility\KeyboardClass.h" />
+    <ClInclude Include="..\Dx11Project\Utility\KeyboardEvent.h" />
+    <ClInclude Include="..\Dx11Project\Utility\MouseClass.h" />
+    <ClInclude Include="..\Dx11Project\Utility\MouseEvent.h" />
+    <ClInclude Include="..\Dx11Project\Utility\MouseKeyboard.h" />
+    <ClInclude Include="..\Dx11Project\Utility\MyTimer.h" />
+    <ClInclude Include="..\Dx11Project\Utility\MyTypes.h" />
+    <ClInclude Include="..\Dx11Project\Utility\SmartPointer.h" />
+    <ClInclude Include="..\Dx11Project\Utility\StringConverter.h" />
+    <ClInclude Include="..\Dx11Project\Utility\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Dx11Project\Graphic\3D\Camera.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\3D\MySTL.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\3D\STLReader.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Font\MyFont.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GraphicExample.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIButton.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUICheckBox.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIComBox.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIListBox.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIRadio.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIScrollBar.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\GUIStatic.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\MYGUI.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\GUI\SettingGUI.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\AdapterTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\BlendTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\BufferTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\ConstantBufTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DepthStencilTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DrawTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DXDeviceTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\DXWIndowTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\MeshTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\RasterizerTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\RenderTargetViewTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\RenderTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\SamplerTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\ShaderTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Graphic\Tools\TextureTool.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\ErrorLogger.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\FileSystem.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\KeyboardClass.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\KeyboardEvent.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\MouseClass.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\MouseEvent.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\MouseKeyboard.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\MyTimer.cpp" />
+    <ClCompile Include="..\Dx11Project\Utility\StringConverter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
